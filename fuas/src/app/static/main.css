@@ -1,0 +1,30 @@
+.header {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.subTitle {
+  font-size: 1.3em;
+}
+
+.briket {
+  font-size: 1.5em;
+}
+
+.startBtn {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffa34e;
+  border: 0px;
+  border-radius: 12px;
+  font-size: 2em;
+  cursor: pointer;
+}
