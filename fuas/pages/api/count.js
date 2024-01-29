@@ -12,12 +12,8 @@ function queryPromise(queryString) {
 }
 
 export default async function handler(req, res) {
-  let queryString = "SELECT * from count_table";
-
-  try {
-  let updateQuery = `UPDATE count_table SET total_count = (SELECT COUNT(*) FROM student_table WHERE reservation = 1) WHERE id = 1`;
+  let updateQuery = `UPDATE count_table SET total_count = (SELECT COUNT(*) FROM student_table WHERE reservation = 1)`;
   let queryString = `SELECT * from count_table`;
-
   try {
     await queryPromise(updateQuery);
     const rows = await queryPromise(queryString);
