@@ -37,6 +37,7 @@
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .student_container {
