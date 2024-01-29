@@ -6,12 +6,14 @@ function userData(props) {
   return (
     <div className="student_container">
       <div className="student_wrap">
-        <span>{student_id}</span>
-        <span>{student_name}</span>
-        <span>{isUse}</span>
-        <span>
+        <div>
+          <p>{student_id}</p>
+          <p>{student_name}</p>
+        </div>
+        <p>{isUse}</p>
+        <p className="setTimeView">
           {start_time} ~ {end_time}
-        </span>
+        </p>
       </div>
     </div>
   );
