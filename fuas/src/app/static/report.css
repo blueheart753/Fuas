@@ -25,6 +25,7 @@
     margin: 10px 0;
     background-color: transparent;
     border-radius: 4px;
+    font-size: 1.2em;
 }
 
 .info:nth-of-type(5) > input {
