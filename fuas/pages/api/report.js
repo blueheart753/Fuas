@@ -12,10 +12,10 @@ function queryPromise(queryString, values) {
 }
 
 export default async function handler(req, res) {
-  const {  id, category, reporter, criminal, report, created_at } = req.body;
+  const {  reporter, criminal, title, category, report, created_at } = req.body;
 
-  let queryString = `INSERT INTO report_table (id, category, reporter, criminal, report, created_at) VALUES (?, ?, ?, ?, ?, ?)`;
-  let values = [ id, category, reporter, criminal, report, created_at];
+  let queryString = `INSERT INTO report_table (reporter, criminal, title, category, report, created_at) VALUES (?, ?, ?, ?, ?, ?)`;
+  let values = [ reporter, criminal, title, category, report, created_at];
 
   try {
     const rows = await queryPromise(queryString, values);
